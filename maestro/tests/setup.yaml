@@ -1,0 +1,5 @@
+appId: "com.example.jetnews"
+
+---
+- launchApp:
+    clearState: true

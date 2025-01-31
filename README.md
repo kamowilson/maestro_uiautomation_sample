@@ -19,15 +19,14 @@ The following test cases are automated using the Maestro framework:
 
 The **Pages** directory contains YAML files that define the individual steps required to interact with various screens in the Jetnews app.
 
-- **MainPage.yaml**: Defines the steps to verify functionality on the main page of the Jetnews application, such as opening the app and validating texts, content and some buttons.
-
+- **MainPage.yaml**: Defines the steps to verify functionality on the main page of the Jetnews application, such as opening the app and validating the tests and closing the app after execution.
 ### Tests
 
 The **Tests** directory holds YAML files for the test flows, linking different page steps together to perform end-to-end UI tests.
 
-- **hometest.yaml**: This file combines steps from multiple page definitions (e.g., MainPage.yaml) to execute an end-to-end test that ensures core functionality like launching the app, navigating through the menu, and validating content on the main page.
+- **hometest.yaml**: This file combines steps from multiple page definitions (e.g., setup.yaml) to execute an end-to-end test that ensures core functionality like launching the app, expanding the sidebar, and validating its content .
   
-- **intereststest.yaml**: Automates the process of navigating to the Interests page, interacting with various topic tabs, and performing assertions on the displayed content. It also includes a scroll to the bottom of the page and verifies the presence of a specific text element.
+- **intereststest.yaml**: Automates the process of navigating to the Interests page, interacting with various tests and tabs, and performing assertions on the displayed content. It also includes a scroll to the bottom of the page and verifies the presence of a specific text element.
 
 ## Getting Started
 

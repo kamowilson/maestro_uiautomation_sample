@@ -1,6 +1,8 @@
 appId: "com.example.jetnews"
 
 ---
+- runFlow: ../tests/setup.yaml
+
 # Asserts relevant IDs and buttons on the homepage
 - assertVisible: "Top stories for you"
 - assertVisible: "Search"

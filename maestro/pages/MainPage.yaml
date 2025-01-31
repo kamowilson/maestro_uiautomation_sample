@@ -1,15 +1,13 @@
 appId: "com.example.jetnews"
 
 ---
-# Launches app with clear state
-- launchApp:
-    clearState: true
 - startRecording: recording # Records test steps
 
-# Runs tests
+# Runs steps and tests
+- runFlow: ../tests/setup.yaml
 - runFlow: ../tests/hometest.yaml
 - runFlow: ../tests/intereststest.yaml
 
 - stopRecording # Stops recording tests
-# Closes App after test execution
-- stopApp
+
+- stopApp # Closes App after test execution

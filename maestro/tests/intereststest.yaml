@@ -1,6 +1,9 @@
 appId: "com.example.jetnews"
 
 ---
+- runFlow: ../tests/setup.yaml
+- runFlow: ../tests/hometest.yaml
+
 - assertVisible:
     id: "android:id/content"
 
@@ -31,5 +34,6 @@ appId: "com.example.jetnews"
     visibilityPercentage: 100 
     centerElement: false 
 
+ 
 
 
