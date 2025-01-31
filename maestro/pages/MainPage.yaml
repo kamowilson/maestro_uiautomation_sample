@@ -4,12 +4,12 @@ appId: "com.example.jetnews"
 # Launches app with clear state
 - launchApp:
     clearState: true
-- startRecording: recording
+- startRecording: recording # Records test steps
 
 # Runs tests
 - runFlow: ../tests/hometest.yaml
 - runFlow: ../tests/intereststest.yaml
 
-- stopRecording
+- stopRecording # Stops recording tests
 # Closes App after test execution
 - stopApp
