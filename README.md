@@ -15,7 +15,7 @@ The following test cases are automated using the Maestro framework:
 
 ## Project Structure
 
-### Pages
+## Pages
 
 The **Pages** directory contains YAML files that define the individual steps required to interact with various screens in the Jetnews app.
 
@@ -33,14 +33,14 @@ The **Tests** directory holds YAML files for the test flows, linking different p
 
 To begin running automated tests with Maestro, follow the setup and configuration steps below.
 
-### Prerequisites
+## Prerequisites
 
 Ensure you have the following installed on your machine:
 
 - [Maestro Framework](https://maestro.mobile.dev/getting-started/installing-maestro) (for UI test automation)
 - The **Jetnews** application installed on a physical device or emulator
 
-### Environment Setup
+## Environment Setup
 
 1. **Clone the repository**:
 
@@ -55,14 +55,13 @@ Ensure you have the following installed on your machine:
 
 3. **Install Jetnews App**:
 
-   - For **Android**, install via the Play Store or build it from the source.
-   - For **iOS**, install through the App Store or run the build for iOS.
+   - Clone the repository https://github.com/renatibrahimov/test-assignment and run the project
 
 4. **Connect Device or Emulator**:
 
-   Ensure a physical device or emulator is running. Maestro supports both Android and iOS devices.
+   Ensure a physical device or emulator is running. Maestro supports both Android and iOS devices. Do not run both emulators together, instead one at a time.
 
-### Running the Tests
+## Running the Tests
 
 Once the setup is complete, you can run the tests with the following command:
 
@@ -90,11 +89,14 @@ Once the setup is complete, you can run the tests with the following command:
 
    This will trigger the `MainPage.yaml`, file and run all test subflows in the test suite
 
-### Customizing the Tests
+## Extras
+Start recording and Stop recording commands create an mP4 file after execution of test that can be played to follow the steps of the test execution
+
+## Customizing the Tests
 
 Feel free to modify the YAML test definitions as per your application's specific requirements. You can add more pages, test cases, or assertions.
 
-### Configuring Maestro
+## Configuring Maestro
 
 You can configure Maestro using the `maestro.yaml` configuration file to adjust device settings, app paths, and other parameters. A sample configuration might look like:
 
