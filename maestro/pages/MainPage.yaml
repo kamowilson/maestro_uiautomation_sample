@@ -1,0 +1,13 @@
+appId: "com.example.jetnews"
+
+---
+# Launches app with clear state
+- launchApp:
+    clearState: true
+
+# Runs tests
+- runFlow: ../tests/hometest.yaml
+- runFlow: ../tests/intereststest.yaml
+
+# Closes App after test execution
+- stopApp

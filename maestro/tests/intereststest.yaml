@@ -1,0 +1,35 @@
+appId: "com.example.jetnews"
+
+---
+- assertVisible:
+    id: "android:id/content"
+
+- tapOn: "Interests"
+- assertVisible:
+    id: "android:id/content" # Asserts block of IDs on the Interests page
+
+# Asserts for relevant texts are visible
+- assertVisible: "Search"
+- assertVisible: "Open navigation drawer"
+- assertVisible: "Topics"
+- assertVisible: "People"
+- assertVisible: "Publications"
+
+- tapOn: "People"
+- tapOn: "Publications"
+- tapOn: "Topics"
+- tapOn:
+    point: "92%,24%" # Selects a topic
+
+# Scrolls page until Google @ the bottom of page is Visible
+- scrollUntilVisible:
+    element:
+      text: "Google"
+    direction: DOWN 
+    timeout: 50000 
+    speed: 40 
+    visibilityPercentage: 100 
+    centerElement: false 
+
+
+

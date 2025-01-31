@@ -1,0 +1,16 @@
+appId: "com.example.jetnews"
+
+---
+# Asserts relevant IDs and buttons on the homepage
+- assertVisible: "Top stories for you"
+- assertVisible: "Search"
+- assertVisible: "Redesigning the Android Studio Logo"
+- assertVisible:
+    id: "android:id/content"
+
+# Taps on the Sidebar drawer and asserts for Jetnews text
+- tapOn: "Open navigation drawer"
+- assertVisible:
+    text: "Jetnews"
+    text: "Home"
+    text: "Interests"

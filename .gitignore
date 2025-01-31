@@ -1,0 +1,43 @@
+# Node modules (if you are using a Node.js-based setup)
+node_modules/
+
+# Build directories for different platforms
+/build/
+/dist/
+
+# Jetnews app installation files (APK/IPA files)
+*.apk
+*.ipa
+
+# Device and emulator logs
+*.log
+*.out
+
+# Temporary files created by IDEs
+.vscode/
+.idea/
+
+# IntelliJ IDEA
+*.iml
+
+# macOS specific files
+.DS_Store
+
+# Android Studio files
+.gradle/
+local.properties
+*.hprof
+
+# iOS specific files
+xcuserdata/
+DerivedData/
+*.xccheckout
+
+# Maestro specific cache and output directories
+maestro_output/
+
+# Other system files
+Thumbs.db
+
+# OS-specific files
+Desktop.ini
