@@ -5,11 +5,12 @@ appId: "com.example.jetnews"
 - runFlow: ../tests/hometest.yaml
 
 - assertVisible:
-    id: "android:id/content"
+    id: "android:id/content" # Asserts the sidebar drawer content 
 
 - tapOn: "Interests"
 - assertVisible:
     id: "android:id/content" # Asserts block of IDs on the Interests page
+- assertVisible: "Interests" # Verifies that Interests text is Visible on the page
 
 # Asserts for relevant texts are visible
 - assertVisible: "Search"
@@ -19,10 +20,22 @@ appId: "com.example.jetnews"
 - assertVisible: "Publications"
 
 - tapOn: "People"
+- tapOn:
+    point: "50%,39%" # Selects topic Kris Vriloc 
+- tapOn:
+    point: "92%,87%" # Selects topic Kemarrin Muuda
+
 - tapOn: "Publications"
+- tapOn:
+    point: "92%,63%" # Selects topic Jectpack Ark 
+- tapOn:
+    point: "50%,31%" # Selects topic Compose Mix
+
 - tapOn: "Topics"
 - tapOn:
-    point: "92%,24%" # Selects a topic
+    point: "50%,73%" # Selects topic Java
+- tapOn:
+    point: "50%,27%" # Selects topic Jetpack Compose
 
 # Scrolls page until Google @ the bottom of page is Visible
 - scrollUntilVisible:
