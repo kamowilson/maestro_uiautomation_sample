@@ -12,7 +12,6 @@ appId: "com.example.jetnews"
 
 # Taps on the Sidebar drawer and asserts for Jetnews text
 - tapOn: "Open navigation drawer"
-- assertVisible:
-    text: "Jetnews"
-    text: "Home"
-    text: "Interests"
+- assertVisible: "Jetnews"
+- assertVisible: "Home"
+- assertVisible: "Interests"
